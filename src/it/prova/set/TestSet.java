@@ -59,6 +59,7 @@ public class TestSet {
 		treeSetDiInteri.add(100);
 		treeSetDiInteri.add(10009);
 		treeSetDiInteri.add(-5);
+		treeSetDiInteri.add(42);
 		treeSetDiInteri.addAll(setDiInteri);
 		
 		//l'ordine di iterazione su un TreeSet e' crescente e le operazioni normali hanno costo log(n)
