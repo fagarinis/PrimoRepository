@@ -1,0 +1,17 @@
+In java ci sono diverse modalità per leggere dati da uno stream (che sia un file oppure un socket), 
+ognune dei quali è indicato in base alle operazioni che vogliamo eseguire. 
+
+Per quanto ci riguarda, se vogliamo leggere righe di testo da un file allora 
+ci conviene utilizzare la classe BufferedReader che è indicata proprio per questo scopo.
+
+La classe BufferedReader implementa due costruttori. Il primo costruttore 
+riceve un solo oggetto di tipo Reader, mentre il secondo riceve sempre 
+il tipo Reader ed un secondo valore di tipo intero che specifica la lunghezza del buffer. 
+Per il nostro scopo possiamo utilizzare il primo costruttore, passando come parametro 
+un'istanza di FileReader che è un'implementazione di Reader per leggere i file:
+
+
+Il codice è abbastanza chiaro. Quando il metodo readLine() ritorna null 
+significa che abbiamo raggiunto la fine del file, quindi il ciclo si ferma. 
+Il codice qui sotto è l'esempio completo dove vengono gestite anche le eccezioni 
+che possono essere sollevate (IOException, FileNotFoundException):
